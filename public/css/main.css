@@ -4,7 +4,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 #main-grid{
@@ -30,3 +30,8 @@ body {
 #header-button {
 	margin:5px;
 }
+
+#fakebot {
+	height: 600px;
+}
+
