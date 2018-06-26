@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Title</title>
+  <title>Le premier chatbot dédié à la presse papier !</title>
 
     <!-- Semantic UI & jQuery -->
     <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
@@ -19,101 +19,173 @@
     <!-- Send to Messenger -->
     <script src="js/fb.js">  </script>
 
+    <link rel="stylesheet" type="text/css" href="device.css">
+
 
 </head>
 
 
 <body class="site">
 
+<div class="main-content">
 
+  <div class="ui stackable padded grid" id="main-grid">
 
-<div class="header">
-    <div class="ui middle aligned centered padded grid">
-        <div class="row">
-            <div class="red center aligned column">Vous êtes éditeur et vous ne trouvez pas votre titre ?  &nbsp; <button class="ui inverted white basic small button" id="header-button">Contactez-nous !</button> </div>
-       </div>
-    </div>
-</div>
+    <div class="computer only one wide column"></div>
 
+    <div class="tablet only one wide column"></div>
 
-<div class="main-content"> 
+    <div class="computer only four wide blue column">DEVICE</div>
 
-  <div class="ui two column stackable padded grid" id="main-grid">
+    <div class="tablet only four wide blue column">DEVICE</div>
 
-    <div class="tel middle aligned computer only column">
-      <div class="ui medium image">
-        <img class="ui image" src="img/chatbot3.png">
-      </div>    
-    </div>
+    <div class="computer only one wide column"></div>
 
-    <div class="tel middle aligned tablet only column">
-      <div class="ui medium image">
-        <img class="ui image" src="img/chatbot3.png">
-      </div>    
-    </div>
+    <div class="tablet only one wide column"></div>
 
-    
-    <div class="middle aligned column">
-      
-      <div class="row">
-        <div class="column">
-          <h2 class="ui header">
-              <i class="rocketchat icon"></i>
-              <div class="content">
-                Le Chatbot de Newspayper
-                <div class="sub header">Un chatbot trop stylé qui t'informe sur la presse</div>
+    <div class="middle aligned nine wide column">
+
+      <div class="ui centered stackable padded grid"> 
+
+          <div class="sixteen wide column">
+
+            <div id="title-box">
+
+              <h2 class="ui huge header">
+
+                  <i class="rocketchat icon"></i>
+
+                  <div class="content">
+                    Le premier chatbot dédié à la presse papier !
+                  </div>
+              </h2>
+          
+            </div>
+
+          </div>
+
+          <div class="centered two column row">
+            
+            <div class="computer only five wide column">
+              <div class="pointer middle aligned column">
+                Essayez-moi ! 👉          
               </div>
-          </h2>
-          <div class="fb-send-to-messenger" 
-            messenger_app_id="1678638095724206" 
-            page_id="373045179870489" >
+            </div>
+
+            <div class="tablet only five wide column">
+              <div class="pointer middle aligned column">
+                Essayez-moi ! 👉          
+              </div>
+            </div>
+
+            <div class="mobile only five wide column">
+              <div class="pointer middle aligned column">
+                Essayez-moi ! 👇         
+              </div>
+            </div>
+            
+            <div class="five wide column" id="fb-grid">
+              <div class="fb-send-to-messenger" 
+                messenger_app_id="1678638095724206" 
+                page_id="373045179870489"
+                data-ref=""
+                color="blue"
+                size="xlarge" >
+              </div>
+            </div>
+
           </div>
-        </div>
+
+          <div class="centered row" id="adblock">
+            <div class="ui secondary segment">
+              <p>(Si rien n'apparait, vérifiez votre bloqueur de publicités.)</p>
+            </div>
+          </div>
+
+          <div class="row"></div>
+
+          <h4 class="ui horizontal divider header">
+            <i class="facebook messenger icon"></i>
+            Fonctionnalités
+          </h4>
+
+          <div class="three column row">
+            
+            <div class="column">
+              <h2 class="ui icon header">
+                <i class="newspaper icon"></i>
+                <div class="content">
+                  Le meilleur de la presse
+                  <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+                </div>
+              </h2>
+            </div>
+            
+            <div class="column">
+              <h2 class="ui icon header">
+                <i class="history icon"></i>
+                <div class="content">
+                  Ne ratez plus aucune sortie
+                  <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+                </div>
+              </h2>            
+            </div>
+
+            <div class="column">
+              <div>
+
+              <h2 class="ui icon grey header">
+                <i class="heart icon"></i> 
+                <div class="content">
+                  Selection personnalisée 
+                  <div class="sub header">Notre chatbot s'adapte à vos préférences pour vous proposer certains titres en priorité.</div>
+                </div>
+              </h2>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="row"></div>
+
+          <div class="row">
+                          
+            <div class="ui warning compact message">
+              <i class="close icon"></i>
+              <div class="header">
+                Vous êtes éditeur ?
+              </div>
+              <p>  Si vous ne trouvez pas votre titre... <button class="ui brown tiny button" id="header-button">Contactez-nous !</button> </p>
+            </div>
+
+          </div>
+
       </div>
 
-      
-      <div class="ui middle aligned padded grid">
-
-        <div class="row">
-          <div class="fancyContainer">
-            <ul class="chatBox">
-              <li class="him">Voilà les journaux et magazines en cours actuellement en vente ! 📰</li>
-              <li class="him">
-                  <p>Causette - ceci c'est des tags</p>
-                  <p>Capital - tags</p>
-                  <p>Challenges - Mai 68/2018, Lagardère</p>
-                  <p>Usbek & Rica - </p>
-                  <p>Marianne -</p>
-              </li>     
-              <li class="me">Causette</li>
-              <li class="him">Voilà les journaux et magazines en cours actuellement en vente ! 📰</li>
-              <li class="me">I'll have to talk about this some other time.</li>
-              <li class="me">No wait. I might change my mind</li>
-              <li class="him">Nonesense good sir! We'll have this talk right now and here.</li>
-              <li class="him">I Like...</li>
-              <li class="him">popsicles.</li>
-              <li class="me">I can't believe you've done this to me!</li>
-            </ul>
-          </div>
-        </div>
-
-
-
-      </div>
     </div>
 
-    <div class="tel mobile only column">
-      <div class="ui medium image">
-        <img class="ui image" src="img/chatbot3.png">
-      </div>  
-    </div>
+    <div class="computer only one wide column"></div>
 
+    <div class="tablet only one wide column"></div>
 
-
-
+    <div class="mobile only four wide blue column">DEVICE</div>
+    
   </div>
 
 </div>
+
+
+<!-- FB Customer Chat Plugin -->
+
+<div
+  class="fb-customerchat"
+  page_id="373045179870489"
+  ref="">
+</div>
+
+
+<!-- Footer -->
 
 <div class="footer">
     <div class="ui padded grid">
@@ -124,7 +196,8 @@
 </div>
 
 
-  <!-- chargement scripts -->
+
+<!-- Chargement scripts -->
 
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script src="js/index.js"></script>
@@ -133,3 +206,7 @@
 </body>
 
 </html>
+
+
+
+      
