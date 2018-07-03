@@ -6,3 +6,19 @@ $('.message .close')
     ;
   })
 ;
+
+// Display dimmer when hovering element with '.screen' class
+
+$('.screen')
+  .dimmer({
+    on: 'hover'
+  })
+;
+
+// Dimmmer Button opening m.me Messenger link
+
+$('.messenger-link').click(function() {
+	window.open("http://m.me/373045179870489");
+});
+
+

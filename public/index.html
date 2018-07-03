@@ -24,7 +24,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <!-- Send to Messenger -->
+    <!-- Facebook SDK for JavaScript -->
     <script src="js/fb.js">  </script>
 
     <!-- Facebook Pixel Code -->
@@ -47,7 +47,7 @@
 
 
     <!-- Device CSS -->
-    <link rel="stylesheet" type="text/css" href="device.css">
+    <link rel="stylesheet" type="text/css" href="css/device.css">
 
 
 </head>
@@ -63,9 +63,77 @@
 
     <div class="tablet only one wide column"></div>
 
-    <div class="computer only four wide blue column">DEVICE</div>
+    <div class="middle aligned computer only four wide column">
 
-    <div class="tablet only four wide blue column">DEVICE</div>
+      <div class="marvel-device iphone8 silver scale--01">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        
+        <div class="screen">
+
+          <!-- Content goes here -->
+
+          <div class="ui inverted dimmer">
+            <div class="content">
+              <button class="ui labeled icon primary large button messenger-link">
+                <i class="facebook messenger icon"></i>
+                Discuter
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <video class="videoInsert" src="https://firebasestorage.googleapis.com/v0/b/chatbotpage.appspot.com/o/video.mp4?alt=media&token=1d4603b7-e10f-469b-bd85-e12a199f1c99" muted loop autoplay poster="img/poster.png"></video>
+          </div>
+
+          <!-- End of Content -->
+
+        </div>
+
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+      </div>
+
+    </div>
+
+    <div class="middle aligned tablet only four wide column">
+
+      <div class="marvel-device iphone5s silver scale--01">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        <div class="screen">
+
+          <!-- Content goes here -->
+
+          <div class="ui inverted dimmer">
+            <div class="content">
+              <button class="ui labeled icon primary medium button messenger-link">
+                <i class="facebook messenger icon"></i>
+                Discuter
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <video class="videoInsert" src="https://firebasestorage.googleapis.com/v0/b/chatbotpage.appspot.com/o/video.mp4?alt=media&token=1d4603b7-e10f-469b-bd85-e12a199f1c99" muted loop autoplay poster="img/poster.png"></video>
+          </div>
+
+          <!-- End of Content -->
+
+        </div>
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+      </div>
+
+    </div>
 
     <div class="computer only one wide column"></div>
 
@@ -96,19 +164,19 @@
             
             <div class="pointer computer only five wide column">
               <div class="middle aligned column">
-                Essayez-moi ! 👉          
+                Essayez-moi ! <img class="ui mini right spaced image" src="img/white-right-pointing-backhand-index.png">          
               </div>
             </div>
 
             <div class="pointer tablet only five wide column">
               <div class="middle aligned column">
-                Essayez-moi ! 👉          
+                Essayez-moi ! <img class="ui mini right spaced image" src="img/white-right-pointing-backhand-index.png">         
               </div>
             </div>
 
             <div class="pointer mobile only five wide column">
-              <div class="middle aligned column">
-                Essayez-moi ! 👇         
+              <div class="text-align middle aligned column">
+                Essayez-moi ! <img class="ui mini right spaced image" src="img/white-down-pointing-backhand-index.png">       
               </div>
             </div>
             
@@ -117,7 +185,7 @@
                 messenger_app_id="1678638095724206" 
                 page_id="373045179870489"
                 data-ref=""
-                color="white"
+                color="blue"
                 size="xlarge" >
               </div>
             </div>
@@ -176,7 +244,7 @@
 
           <div class="row">
                           
-            <div class="ui warning compact message">
+            <div class="ui warning compact message" id="publisher">
               <i class="close icon"></i>
               <div class="header">
                 Vous êtes éditeur ?
@@ -194,8 +262,29 @@
 
     <div class="tablet only one wide column"></div>
 
-    <div class="mobile only four wide blue column">DEVICE</div>
+
+  <!-- Device Mobile Row 
+
+    <div class="mobile only four wide blue column">
+      
+      <div class="marvel-device iphone5s silver scale--03">
+        <div class="top-bar"></div>
+        <div class="sleep"></div>
+        <div class="volume"></div>
+        <div class="camera"></div>
+        <div class="sensor"></div>
+        <div class="speaker"></div>
+        <div class="screen">
+
+        </div>
+        <div class="home"></div>
+        <div class="bottom-bar"></div>
+      </div>
+
+    </div>
     
+  -->
+
   </div>
 
 </div>
@@ -215,11 +304,19 @@
 
 <!-- Footer -->
 
-<div class="footer">
-    <div class="ui padded grid">
-      <div class="centered black row">
-        <span>Made with 💙 in Paris, France by </span><img class="ui spaced image" id="footer-logo" src="img/logo-npp-white.png">
-      </div>
+<div>
+    <div class="ui equal width stackable padded grid">
+      <div class="text-align center aligned black row" id="footer">
+        <div class="column">
+            <a target="_blank" href="https://www.facebook.com/newspayper.fr"><i class="large facebook f icon social"></i></a>
+            <a target="_blank" href="https://twitter.com/newspayper_fr"><i class="large twitter icon social"></i></a>
+            <a target="_blank" href="https://medium.com/newspayper"><i class="large medium m icon social"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/newspayper.fr/"><i class="large linkedin in icon social"></i></a>         
+        </div>
+        <div class="column">
+          <span>Made with 💙 in Paris, France by </span><img class="ui spaced image" id="footer-logo" src="img/logo-npp-white.png">          
+        </div>
+      </div>  
     </div>
 </div>
 
@@ -234,26 +331,3 @@
 </body>
 
 </html>
-
-<!-- Load Facebook SDK for JavaScript
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> -->
-
-<!-- Your customer chat code
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="373045179870489"
-  theme_color="#00adee"
-  logged_in_greeting="Salut ! Pour les sorties presse c'est par ici 👇"
-  logged_out_greeting="Salut ! Pour les sorties presse c'est par ici 👇">
-</div>  -->
-
-
-
-      

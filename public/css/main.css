@@ -84,3 +84,31 @@ body {
 #features{
   margin: 15px;
 }
+
+.videoInsert {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.social {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#publisher {
+  margin: 15px; 
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+a:hover {
+  color: #00adee;
+}
+
+#footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
