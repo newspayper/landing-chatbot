@@ -4,6 +4,7 @@ html {
 
 body {
   height: 100%;
+  color: white;
   background-color: #fff;
 /*   background-color: #eee; */
 }
@@ -15,12 +16,17 @@ body {
 #main-grid{
   height: 100%;
       /* Background styles */
-    /*background-image: url(../img/man1_70.jpg);*/
+    background-image: url(../img/blur-mags-dark.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+#title{
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: 100px;
 }
 
 /* flex site for bottom sticky footer */
@@ -109,11 +115,32 @@ a:hover {
   color: #00adee;
 }
 
-#footer{
+.footer{
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-h2{
-  color: #0084FF !important;
+
+h2, h3 {
+  color: white !important;
+}
+
+
+.header{
+  color: white !important;
+}
+
+#alternate-button{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+._1krz{
+  color: white !important;
+}
+
+._3sxz{
+  color: white !important;
 }
