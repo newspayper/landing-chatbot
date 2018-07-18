@@ -45,6 +45,18 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
 
+    <!-- Hotjar Tracking Code for https://chatbotpage.firebaseapp.com/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:942914,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- End Hotjar Tracking Code -->
 
     <!-- Device CSS -->
     <link rel="stylesheet" type="text/css" href="css/device.css">
@@ -87,7 +99,7 @@
           </div>
 
           <div>
-            <video class="videoInsert" src="https://firebasestorage.googleapis.com/v0/b/chatbotpage.appspot.com/o/video.mp4?alt=media&token=1d4603b7-e10f-469b-bd85-e12a199f1c99" muted loop autoplay poster="img/poster.png"></video>
+            <video class="videoInsert" src="img/video.mp4" muted loop autoplay poster="img/poster.png"></video>
           </div>
 
           <!-- End of Content -->
@@ -123,7 +135,7 @@
           </div>
 
           <div>
-            <video class="videoInsert" src="https://firebasestorage.googleapis.com/v0/b/chatbotpage.appspot.com/o/video.mp4?alt=media&token=1d4603b7-e10f-469b-bd85-e12a199f1c99" muted loop autoplay poster="img/poster.png"></video>
+            <video class="videoInsert" src="img/video.mp4" muted loop autoplay poster="img/poster.png"></video>
           </div>
 
           <!-- End of Content -->
@@ -141,7 +153,30 @@
 
     <div class="middle aligned nine wide column">
 
-      <div class="ui centered stackable padded grid"> 
+      <div class="ui centered padded grid"> 
+
+        <div class="two column middle aligned row">
+
+          <div class="four wide column">
+              <div class="ui right floated tiny image">
+                <img src="img/speech-balloon.png">
+              </div>
+          </div>
+
+          <div class="twelve wide column">
+                <h2 class="ui huge header">
+                  <div class="content">
+                    Le premier chatbot dédié à la presse papier !
+                  </div>
+                </h2>
+          </div>
+          
+
+
+        
+        </div>
+
+<!-- OLD Title
 
           <div class="sixteen wide column">
 
@@ -160,16 +195,18 @@
 
           </div>
 
+-->
+
           <div class="centered two column row">
             
             <div class="pointer computer only five wide column">
-              <div class="middle aligned column">
+              <div class="text-align middle aligned column">
                 Essayez-moi ! <img class="ui mini right spaced image" src="img/white-right-pointing-backhand-index.png">          
               </div>
             </div>
 
             <div class="pointer tablet only five wide column">
-              <div class="middle aligned column">
+              <div class="text-align middle aligned column">
                 Essayez-moi ! <img class="ui mini right spaced image" src="img/white-right-pointing-backhand-index.png">         
               </div>
             </div>
@@ -200,45 +237,52 @@
 
           <div class="row"></div>
 
+
+          <!-- Divider
+
           <h4 class="ui horizontal divider header">
             <i class="facebook messenger icon"></i>
             Fonctionnalités
           </h4>
 
+           -->
+
           <div class="stackable padded three column row" id="features">
             
             <div class="centered column">
               <img class="ui centered tiny image" src="img/newspaper.png">
-              <h2 class="ui centered header">
+              <h3 class="ui centered header">
                 <div class="content">
                   Le meilleur de la presse
                   <div class="sub header">Nous sélectionnons les meilleures publications pour vous.</div>
                 </div>
-              </h2>
+              </h3>
             </div>
             
             <div class="centered column">
               <img class="ui centered tiny image" src="img/alarm-clock.png">
-              <h2 class="ui centered header">
+              <h3 class="ui centered header">
                 <div class="content">
                   Ne ratez plus aucune sortie
                   <div class="sub header">Notre catalagoue est maintenu à jour à chaque sortie.</div>
                 </div>                
-              </h2>          
+              </h3>          
             </div>
 
             <div class="centered column">
               <img class="ui centered tiny image" src="img/revolving-hearts.png">
-              <h2 class="ui centered header">
+              <h3 class="ui centered header">
                 <div class="content">
                   Selection personnalisée 
                   <div class="sub header">Le chatbot s'adapte et propose certains titres en priorité.</div>
                 </div>
-              </h2>
+              </h3>
             </div>
 
 
           </div>
+
+<!-- Row séparation + Message Editeur
 
           <div class="row"></div>
 
@@ -249,10 +293,11 @@
               <div class="header">
                 Vous êtes éditeur ?
               </div>
-              <p>  Si vous ne trouvez pas votre titre... <button class="ui brown tiny button" id="header-button">Contactez-nous !</button> </p>
+              <p>  Si vous ne trouvez pas votre titre... <button class="ui brown tiny button" id="header-button" onclick="window.location.href='mailto:contact@newspayper.fr'">Contactez-nous !</button> </p>
             </div>
 
           </div>
+-->
 
       </div>
 
@@ -306,7 +351,8 @@
 
 <div>
     <div class="ui equal width stackable padded grid">
-      <div class="text-align center aligned black row" id="footer">
+      
+      <div class="text-align center aligned black computer only row" id="footer">
         <div class="column">
             <a target="_blank" href="https://www.facebook.com/newspayper.fr"><i class="large facebook f icon social"></i></a>
             <a target="_blank" href="https://twitter.com/newspayper_fr"><i class="large twitter icon social"></i></a>
@@ -314,13 +360,47 @@
             <a target="_blank" href="https://www.linkedin.com/company/newspayper.fr/"><i class="large linkedin in icon social"></i></a>         
         </div>
         <div class="column">
-          <span>Made with 💙 in Paris, France by </span><img class="ui spaced image" id="footer-logo" src="img/logo-npp-white.png">          
+          <span>Made with <img class="ui mini spaced image" src="img/blue-heart.png"> in Paris, France by </span><img class="ui spaced image" id="footer-logo" src="img/logo-npp-white.png">          
+        </div>  
+        <div class="column">
+          <button class="ui inverted basic button" onclick="window.location.href='mailto:contact@newspayper.fr'">Professionels ? Contactez-nous !</button>          
+        </div>        
+      </div>
+
+      <div class="text-align center aligned black tablet only row" id="footer">
+        <div class="column">
+            <a target="_blank" href="https://www.facebook.com/newspayper.fr"><i class="large facebook f icon social"></i></a>
+            <a target="_blank" href="https://twitter.com/newspayper_fr"><i class="large twitter icon social"></i></a>
+            <a target="_blank" href="https://medium.com/newspayper"><i class="large medium m icon social"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/newspayper.fr/"><i class="large linkedin in icon social"></i></a>         
         </div>
-      </div>  
+        <div class="column">
+          <span>Made with <img class="ui mini spaced image" src="img/blue-heart.png"> in Paris, France by </span><img class="ui spaced image" id="footer-logo" src="img/logo-npp-white.png">          
+        </div>  
+        <div class="column">
+          <button class="ui inverted basic button" onclick="window.location.href='mailto:contact@newspayper.fr'">Professionels ? Contactez-nous !</button>          
+        </div>             
+      </div>
+
+      <div class="text-align center aligned black mobile only row" id="footer">
+        <div class="column">
+            <a target="_blank" href="https://www.facebook.com/newspayper.fr"><i class="large facebook f icon social"></i></a>
+            <a target="_blank" href="https://twitter.com/newspayper_fr"><i class="large twitter icon social"></i></a>
+            <a target="_blank" href="https://medium.com/newspayper"><i class="large medium m icon social"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/newspayper.fr/"><i class="large linkedin in icon social"></i></a>         
+        </div>
+        <div class="column">
+          <button class="ui inverted basic button" onclick="window.location.href='mailto:contact@newspayper.fr'">Professionels ? Contactez-nous !</button>          
+        </div>  
+        <div class="column">
+          <span>Made with <img class="ui mini spaced image" src="img/blue-heart.png"> in Paris, France by </span><img class="ui spaced image" id="footer-logo" src="img/logo-npp-white.png">          
+        </div>        
+      </div>
+
     </div>
 </div>
 
-
+  
 
 <!-- Chargement scripts -->
 
