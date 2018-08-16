@@ -18,7 +18,7 @@ $('.screen')
 // Dimmmer Button opening m.me Messenger link
 
 $('.messenger-link').click(function() {
-	window.open("http://m.me/373045179870489");
+	window.open("http://m.me/newspayper.fr");
 });
 
 

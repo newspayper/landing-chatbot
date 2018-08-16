@@ -16,17 +16,32 @@ body {
 #main-grid{
   height: 100%;
       /* Background styles */
-    background-image: url(../img/blur-mags-dark.png);
+    background-image: url(../img/man-dark.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-#title{
+#title-C{
   font-size: 3.5em;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 140px;
+  padding-bottom: 20px;
+}
+
+#title-T{
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 20px;
+}
+
+#title-M{
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 /* flex site for bottom sticky footer */
@@ -88,8 +103,15 @@ body {
   padding: 10px;
 }
 
+
+#white-space{
+  padding: 50px !important;
+}
+
 #features{
   margin: 15px;
+  padding-top: 150px;
+  max-width: 900px;
 }
 
 .videoInsert {
@@ -131,10 +153,10 @@ h2, h3 {
 }
 
 #alternate-button{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  max-height: 50px;
 }
 
 ._1krz{
